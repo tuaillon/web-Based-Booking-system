@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+    height: 100%;
+	overflow-x: hidden; /* enleve la scrollbar horizontale pas belle | crédit : Omar*/
+}
+
+nav {
+	border: 4px solid #e5989b;
+	background-color: #4a4e69;
+	border-radius: 30px;
+	padding: 0.5rem 1rem;
+	margin: 1rem auto;
+}
+
+nav ul {
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+body {
+	height: 100vh; /* vh -> pour que ça prenne toute la hauteur de la fenêtre */
+	display: flex;
+	flex-direction: column;
+	background-color: #86ccd76e;
+	background-image: url("./../img/background.png");
+    background-attachment: fixed; /* arrière plan fixe */
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul, nav li {
+	border-radius: 2rem 2rem 2rem 2rem; /* Bordures arrondies sur la droite */
+	padding: 0.5rem 0; /* Espacement vertical des éléments du menu */
+}
+
+nav ul li {
+	padding: 2rem 0.1rem; /* Espacement interne des items du menu */
+	background-color: #22223b;
+	margin: .5rem 0; /* Espace entre chaque item du menu */
+}
+
+nav ul li a {
+	color:#f2e9e4;
+	font-weight: bold; /* Texte en gras */
+	text-decoration: none; /* Retire le soulignement des liens */
+	padding: 2rem 1rem;
+}
+
+nav ul li:hover {
+	transition:cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+	scale: 1.1;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+nav li:hover {
+	text-shadow: #f2cc8f 0 0 10px;
+}
+nav li:hover a{
+    color:#c9ada7;/* Change la couleur du texte des liens au survol ou si c'est l'item actif */
+}
+
+
+.style_widgets {
+	background-color: #22223b;
+	border-radius: 15px;
+	color:#f2e9e4;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.style_widgets:hover { /* Effet au survol*/
+	transition:cubic-bezier(0.19, 1, 0.22, 1) 0.4s; /* transition*/
+	scale: 1.1;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+	color:#c9ada7;
+	text-shadow: #f2cc8f 0 0 10px;
+
+}
+
+#selecteurReservation {
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	scale:1.5;
+	gap: 0.3rem; /* espace entre les éléments */
+}
+
+#btnSendRes {
+	text-align: center;
+	width: 6rem;
+}
+
+#labelResIdChoix {
+	margin-right: 10px;
+	color: #22223b;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px){
+	nav ul { /* les éléments du menu deviennent verticaux*/
+		flex-direction: column;
+	}
+	nav li { /* ajustement */
+		width: 90%;
+		white-space: normal;
+	}
+
+	#btnReservation{ /* ajustement du bouton réservation */
+		margin-bottom: 6rem;
+	}
+	#selecteurReservation { /* ajustement du sélecteur réservation */
+		flex-direction: column;
+		align-self: center;
+		scale: 1.2;
+	}
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Facture Réservation</title>
+	<link rel="stylesheet" href="css/facture.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.gif">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cartes.html">Vos cartes d'embarquements</a></li>
+            <li><a href="facture.html">Facture de votre réservation</a></li>
+            <li><a href="tableau.html">Le tableau de bord</a></li>
+            <li><a href="stat.html">Les stastistiques des trajets</a></li>
+            <li><a href="program/main.exe">Télécharger l'Application</a></li>
+        </ul>
+    </nav>
+    <div id="selecteurReservation">
+        <!-- slider de nombre pour choisir l'id de res-->
+        <label id="labelResIdChoix">Choisir l'ID de la réservation:</label>
+        <input type="number" min="1" max="1000" value="1" class="style_widgets" id="resIdChoix">
+        <a class="style_widgets" id="btnSendRes"> Valider</a>
+    </div>
+    <main>
+        <header>
+            <img src="img/CAN.png" alt="Logo">
+            <h2>Facture</h2>
+        </header>
+        <section>
+            <strong><p id="numReservation">Réservation n° : </p></strong>
+            <strong>Nom de Réservation : </strong><p id="nomReservation"></p>
+            <strong>Traversée : </strong><p id="traversee"></p>
+            <strong>Date : </strong><p id="dateReservation"></p>
+            <strong>Départ : </strong><p id="hDepart"></p>
+            <strong>Bateau : </strong><p id="nomBateau"></p>
+            <br>
+            <p><strong>Les personnes</strong></p>
+            <table id="tabPassagers">
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Nombre</th>
+                    <th>Prix Unitaire</th>
+                    <th>Prix ligne</th>  
+                </tr>
+
+            </table>
+            <p>Sous-total personnes: </p><p id="totPersonne"></p>
+            <p><strong>Les véhicules</strong></p>
+
+            <table id="tabVehicules">
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire</th>
+                    <th>Prix ligne</th>  
+                </tr>
+            </table>
+            <p>Sous-total véhicules: </p><p id="totVehicule"></p>
+            
+            <br>
+            <p><strong>Prix total: </strong><strong id="totalPrix"></strong></p>
+            <a class= "style_widgets" id="btnFacture"> Télécharger la facture</a>
+        </section>
+    </main>
+    <script src="scripts/facture.js"></script>
+</body>
+</html>

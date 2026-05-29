@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartes</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.gif">
+
+</head>
+<body>
+    <nav>
+		<ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cartes.html">Vos cartes d'embarquements</a></li>
+            <li><a href="facture.html">Facture de votre réservation</a></li>
+            <li><a href="tableau.html">Le tableau de bord</a></li>
+            <li><a href="stat.html">Les stastistiques des trajets</a></li>
+            <li><a href="program/main.exe">Télécharger l'Application</a></li>
+		</ul>
+	</nav>
+    <div id="selecteurReservation">
+        <!-- slider de nombre pour choisir l'id de res-->
+        <label id="labelResIdChoix">Choisir l'ID de la réservation:</label>
+        <input type="number" min="1" max="1000" value="1" class="style_widgets" id="resIdChoix">
+        <a class="style_widgets" id="btnSendRes"> Valider</a>
+    </div>
+    <main>
+    <script src="scripts/cartes.js"></script>
+    </main>
+</body>
+</html>
