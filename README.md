@@ -1,7 +1,15 @@
-﻿# Reservation Management System
+# Reservation Management System
+
+**IMPORTANT NOTICE:** The backend API for this application no longer works. This was built as a school project, so the API and servers have been taken offline. You can still view the interface, but no actual data will be loaded or processed.
 
 ## Overview
 This project is a web-based reservation and booking management system designed to process JSON data. It provides a comprehensive interface for handling bookings, generating invoices, viewing statistics, and managing tabular data. 
+
+## Screenshots
+
+![Dashboard](assets/index.png)
+
+![Invoice](assets/facture.png)
 
 ## Features
 - Dashboard and Statistics: Visual representation of reservation data and key metrics (stat.html).
@@ -19,11 +27,12 @@ This project is a web-based reservation and booking management system designed t
 - /scripts: Contains all JavaScript logic files for data handling and DOM manipulation.
 - /program: Contains C# processing script(s).
 - /img: Image assets and icons.
+- /assets: Project screenshots.
 
 ## Setup and Installation
 1. Clone the repository to your local environment.
 2. Open the project root directory.
-3. Serve the directory using a local web server (such as VS Code Live Server, Apache, or Python HTTP Server) to ensure proper execution of JavaScript modules and fetch requests.
+3. Serve the directory using a local web server (such as VS Code Live Server, Apache, or Python HTTP Server) to ensure proper execution of JavaScript modules and fetch requests. *(Note again: the API is down, so functionality is severely limited).*
 4. Navigate to index.html in your preferred web browser.
 
 ## Usage
